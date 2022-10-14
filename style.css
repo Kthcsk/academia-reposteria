@@ -468,6 +468,12 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
 
 /* Aquí empiezan los estilos del landing */
 
+.academia-reposteria * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 1024px) {
   .menu {
     display: none;
