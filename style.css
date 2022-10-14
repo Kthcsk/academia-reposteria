@@ -474,6 +474,10 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
   padding: 0;
 }
 
+.academia-reposteria ul {
+  list-style: none;
+}
+
 @media (min-width: 1024px) {
   .menu {
     display: none;
