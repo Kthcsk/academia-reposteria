@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./main.js"></script>
+  <title>Academia Repostería | Gourmet</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="top">
+      <div class="top-desk">
+        <div class="wrap-top-desk">
+          <button>Entra o regístrate</button>
+          <span>|</span>
+          <button>
+            <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" height="48" width="48">
+              <path
+                d="M200,216a16,16,0,1,1-16-16A16.00016,16.00016,0,0,1,200,216ZM80,200a16,16,0,1,0,16,16A16.00016,16.00016,0,0,0,80,200ZM228.10059,67.18262A7.99866,7.99866,0,0,0,221.71387,64H48.32031L40.207,35.604A16.06984,16.06984,0,0,0,24.82227,24H8A8,8,0,0,0,8,40H24.82227l9.73046,34.05469c.02637.09863.05372.19677.084.29443l26.35547,92.24365A24.10087,24.10087,0,0,0,84.06836,184h95.86328a24.101,24.101,0,0,0,23.07617-17.40674l26.39844-92.39551A8.00023,8.00023,0,0,0,228.10059,67.18262Z"
+                fill="#ffffff"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="top-principal">
+        <div class="left">
+          <button type="button" title="menu" class="menu" id="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="48" width="48">
+              <g>
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="#ffffff"></path>
+              </g>
+            </svg>
+          </button>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img class="logo" src="./assets/img/logo-header.webp" alt="Logo Gourmet">
+          </a>
+          <nav class="navbar-mb" id="navbarMb">
+            <div class="nav-header">
+              <img class="logo" src="./assets/img/logo-header.webp" alt="Logo Gourmet">
+              <button type="button" title="close-menu" id="closeMenu">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
+                  <path d="M8 8L40 40" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+                  <path d="M8 40L40 8" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+                </svg>
+              </button>
+            </div>
+            <div class="search-group">
+              <input type="text" name="" id="" autocomplete="off" placeholder="Buscar" value>
+              <button type="button">
+                <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.00098 256.00098" height="48"
+                  width="48">
+                  <path
+                    d="M232.47656,215.51563l-40.67773-40.67774a96.10791,96.10791,0,1,0-16.97168,16.96973l40.67871,40.67871a12.0001,12.0001,0,1,0,16.9707-16.9707ZM43.99707,116a72,72,0,1,1,72,72A72.08124,72.08124,0,0,1,43.99707,116Z"
+                    fill="#ffffff"></path>
+                </svg>
+              </button>
+            </div>
+            <ul class="nav-mb">
+              <li>
+                <a href="https://b2b.gourmet.cl/" target="_blank" rel="noopener noreferrer">Compras por mayor</a>
+              </li>
+              <li>
+                <a href="https://www.gourmet.cl/recetas/">Recetas</a>
+              </li>
+              <li>
+                <a href="https://www.gourmet.cl/videos_tutoriales/">Videos</a>
+              </li>
+              <li>
+                <a href="https://www.gourmet.cl/menu-semanal/">Menú semanal</a>
+              </li>
+              <li>
+                <a href="https://www.gourmet.cl/blog/">Blog</a>
+              </li>
+              <li id="shop">
+                <button id="btnshop" class="collapse">
+                  <p>Tienda</p>
+                  <span class="more">+</span>
+                </button>
+                <ul class="nav-shop">
+                  <li>
+                    <button class="collapse">
+                      <p>
+                        Hierbas y especias
+                      </p>
+                      <span class="more">+</span>
+                    </button>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/condimentos-premium">
+                          Condimentos premium
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/hierbas-para-cocinar">
+                          Hierbas para cocinar
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/especias-para-cocinar">
+                          Especias para cocinar
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/ajos-y-cebollas">
+                          Ajos y cebollas
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/pimientas">
+                          Pimientas
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/sales-para-cocinar">
+                          Sales para cocinar
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/mezclas-y-otras-hierbas-y-especias">
+                          Mezclas y otras hierbas y especias
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias">
+                          Ver todo Hierbas y especias
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="collapse">
+                      <p>
+                        Caldos
+                      </p>
+                      <span class="more">+</span>
+                    </button>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="https://b2c.gourmet.cl/caldos/caldos-en-polvo-mas-natural">
+                          Caldos en polvo más natural
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/caldos/caldos-concentrados-premium">
+                          Caldos concentrados premium
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/caldos/caldos-en-polvo">
+                          Caldos en polvo
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/caldos/sofrito">
+                          Sofrito
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/caldos">
+                          Ver todo caldos
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="collapse">
+                      <p>
+                        Cremas y sopas
+                      </p>
+                      <span class="more">+</span>
+                    </button>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="https://b2c.gourmet.cl/cremas-y-sopas/sopas-y-cremas-mas-natural">
+                          Sopas y cremas más natural
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/cremas-y-sopas/sopas-y-cremas-familiares">
+                          Sopas y cremas familiares
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/cremas-y-sopas/cremas-premium">
+                          Cremas premium
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/cremas-y-sopas/sopas-solo-para-uno">
+                          Sopas solo para uno
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/cremas-y-sopas">
+                          Ver todo cremas y sopas
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="collapse">
+                      <p>
+                        Bases y salsas deshidratadas
+                      </p>
+                      <span class="more">+</span>
+                    </button>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a
+                          href="https://b2c.gourmet.cl/bases-y-salsas-deshidratadas/mix-para-hamburguesas-de-granos-y-legumbres">
+                          Mix para hamburguesas de granos y legumbres
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/bases-y-salsas-deshidratadas/salsas-deshidratadas">
+                          Salsas deshidratadas
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/bases-y-salsas-deshidratadas/bases-deshidratadas">
+                          Bases deshidratadas
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/bases-y-salsas-deshidratadas/sazonadores-mexicanos">
+                          Sazonadores mexicanos
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/bases-y-salsas-deshidratadas">
+                          Ver todo bases y salsas deshidratadas
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="collapse">
+                      <p>
+                        Gourmet más natural
+                      </p>
+                      <span class="more">+</span>
+                    </button>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="https://b2c.gourmet.cl/caldos/caldos-en-polvo-mas-natural">
+                          Caldos en polvo más natural
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://b2c.gourmet.cl/gourmet-mas-natural/mix-para-hamburguesas-de-granos-y-legumbres">
+                          Mix para hamburguesas de granos y legumbres
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/gourmet-mas-natural/salsas-deshidratadas-mas-natural">
+                          Salsas deshidratadas más natural
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/gourmet-mas-natural">
+                          Ver todo Gourmet más natural
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/salsas-condimentadas-para-cocinar">
+                      Salsas condimentadas para cocinar
+                    </a>
+                  </li>
+                  <li>
+                    <button class="collapse">
+                      <p>
+                        Productos de repostería para cocinar
+                      </p>
+                      <span class="more">+</span>
+                    </button>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a
+                          href="https://b2c.gourmet.cl/productos-de-reposter%C3%ADa-para-cocinar/mezclas-listas-de-reposteria">
+                          Mezclas listas de repostería
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://b2c.gourmet.cl/productos-de-reposter%C3%ADa-para-cocinar/decoraciones-para-reposteria">
+                          Decoraciones para repostería
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/productos-de-reposteria-para-cocinar/bases-de-reposteria">
+                          Bases de repostería
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://b2c.gourmet.cl/productos-de-reposteria-para-cocinar/otros-productos-de-reposteria">
+                          Otros productos de repostería
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/productos-de-reposteria-para-cocinar/chocolate-para-reposteria">
+                          Chocolate para repostería
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/productos-de-reposteria-para-cocinar">
+                          Ver todo repostería
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/esencias">
+                      Esencias
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/salsas-para-postres">
+                      Salsas para postres
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/alinos-para-ensaladas">
+                      Aliños para ensaladas
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/salsas-para-untar">
+                      Salsas para untar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/delicatessen-y-otros">
+                      Delicatessen y otros
+                    </a>
+                  </li>
+                  <li>
+                    <button class="collapse">
+                      <p>
+                        Food Service
+                      </p>
+                      <span class="more">+</span>
+                    </button>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/caldos-food-service">
+                          Caldos Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/delicatessen-food-service">
+                          Delicatessen Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/alinos-para-ensaladas-food-service">
+                          Aliños para ensaladas Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/bases-y-salsas-deshidratadas-food-service">
+                          Bases y salsas deshidratadas Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/esencias-food-service">
+                          Esencias Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/hierbas-y-especias-food-service">
+                          Hierbas y especias Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/reposter%C3%ADa-food-service">
+                          Repostería Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/salsa-condimentadas-food-service">
+                          Salsas condimentadas Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/salsas-para-postres-food-service">
+                          Salsas para postres Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service">
+                          Productos la primera Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service">
+                          Ver todo Food Service
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="collapse">
+                      <p>
+                        Regalos para la cocina
+                      </p>
+                      <span class="more">+</span>
+                    </button>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="https://b2c.gourmet.cl/regalos-para-la-cocina/art%C3%ADculos-y-accesorios-de-cocina">
+                          Artículos y accesorios de cocina
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/regalos-para-la-cocina/accesorios-para-la-mesa">
+                          Accesorios para la mesa
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/regalos-para-la-cocina/delantales-de-cocina-y-bolsos">
+                          Delantales de cocina y bolsos
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/regalos-para-la-cocina">
+                          Ver todo regalos para la cocina
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/tienda?order=OrderByNameASC">
+                      <p>
+                        Ver todos los productos Gourmet
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </nav>
+        </div>
+        <div class="right">
+          <button type="button" class="user">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="48" width="48">
+              <g>
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M20 22H4v-2a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v2zm-8-9a6 6 0 1 1 0-12 6 6 0 0 1 0 12z"
+                  fill="#ffffff">
+                </path>
+              </g>
+            </svg>
+          </button>
+          <button type="button" class="cart">
+            <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" height="48" width="48">
+              <path
+                d="M200,216a16,16,0,1,1-16-16A16.00016,16.00016,0,0,1,200,216ZM80,200a16,16,0,1,0,16,16A16.00016,16.00016,0,0,0,80,200ZM228.10059,67.18262A7.99866,7.99866,0,0,0,221.71387,64H48.32031L40.207,35.604A16.06984,16.06984,0,0,0,24.82227,24H8A8,8,0,0,0,8,40H24.82227l9.73046,34.05469c.02637.09863.05372.19677.084.29443l26.35547,92.24365A24.10087,24.10087,0,0,0,84.06836,184h95.86328a24.101,24.101,0,0,0,23.07617-17.40674l26.39844-92.39551A8.00023,8.00023,0,0,0,228.10059,67.18262Z"
+                fill="#ffffff"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="right-desk">
+          <nav class="navbar-desk" id="navbarDesk">
+            <ul class="nav-desk">
+              <li>
+                <a href="https://www.gourmet.cl/" target="_blank" rel="noopener noreferrer">Inicio</a>
+              </li>
+              <li id="shopDesk">
+                <a href="https://b2c.gourmet.cl/" target="_blank" rel="noopener noreferrer" class="collapse">
+                  Tienda
+                </a>
+                <ul class="nav-shop" id="navshopdesk">
+                  <li>
+                    <a href="https://b2c.gourmet.cl/hierbas-y-especias" class="collapse">
+                      Hierbas y especias
+                    </a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/condimentos-premium">
+                          Condimentos premium
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/hierbas-para-cocinar">
+                          Hierbas para cocinar
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/especias-para-cocinar">
+                          Especias para cocinar
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/ajos-y-cebollas">
+                          Ajos y cebollas
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/pimientas">
+                          Pimientas
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/sales-para-cocinar">
+                          Sales para cocinar
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias/mezclas-y-otras-hierbas-y-especias">
+                          Mezclas y otras hierbas y especias
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/hierbas-y-especias">
+                          Ver todo Hierbas y especias
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/caldos" class="collapse">
+                      Caldos
+                    </a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="https://b2c.gourmet.cl/gourmet-mas-natural/caldos-en-polvo-mas-natural">
+                          Caldos en polvo más natural
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/caldos/caldos-concentrados-premium">
+                          Caldos concentrados premium
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/caldos/caldos-en-polvo">
+                          Caldos en polvo
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/caldos/sofrito">
+                          Sofrito
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/caldos">
+                          Ver todo caldos
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/cremas-y-sopas" class="collapse">
+                      Cremas y sopas
+                    </a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="https://b2c.gourmet.cl/cremas-y-sopas/sopas-y-cremas-mas-natural">
+                          Sopas y cremas más natural
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/cremas-y-sopas/sopas-y-cremas-familiares">
+                          Sopas y cremas familiares
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/cremas-y-sopas/cremas-premium">
+                          Cremas premium
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/cremas-y-sopas/sopas-solo-para-uno">
+                          Sopas solo para uno
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/cremas-y-sopas">
+                          Ver todo cremas y sopas
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/bases-y-salsas-deshidratadas" class="collapse">
+                      Bases y salsas deshidratadas
+                    </a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a
+                          href="https://b2c.gourmet.cl/bases-y-salsas-deshidratadas/mix-para-hamburguesas-de-granos-y-legumbres">
+                          Mix para hamburguesas de granos y legumbres
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/bases-y-salsas-deshidratadas/salsas-deshidratadas">
+                          Salsas deshidratadas
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/bases-y-salsas-deshidratadas/bases-deshidratadas">
+                          Bases deshidratadas
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/bases-y-salsas-deshidratadas/sazonadores-mexicanos">
+                          Sazonadores mexicanos
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/bases-y-salsas-deshidratadas">
+                          Ver todo bases y salsas deshidratadas
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/gourmet-mas-natural" class="collapse">
+                      Gourmet más natural
+                    </a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="https://b2c.gourmet.cl/gourmet-mas-natural/caldos-en-polvo-mas-natural">
+                          Caldos en polvo más natural
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://b2c.gourmet.cl/gourmet-mas-natural/mix-para-hamburguesas-de-granos-y-legumbres">
+                          Mix para hamburguesas de granos y legumbres
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/gourmet-mas-natural/salsas-deshidratadas-mas-natural">
+                          Salsas deshidratadas más natural
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/gourmet-mas-natural">
+                          Ver todo Gourmet más natural
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/salsas-condimentadas-para-cocinar">
+                      Salsas condimentadas para cocinar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/productos-de-reposteria-para-cocinar" class="collapse">
+                      Productos de repostería para cocinar
+                    </a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a
+                          href="https://b2c.gourmet.cl/productos-de-reposter%C3%ADa-para-cocinar/mezclas-listas-de-reposteria">
+                          Mezclas listas de repostería
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://b2c.gourmet.cl/productos-de-reposter%C3%ADa-para-cocinar/decoraciones-para-reposteria">
+                          Decoraciones para repostería
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/productos-de-reposteria-para-cocinar/bases-de-reposteria">
+                          Bases de repostería
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://b2c.gourmet.cl/productos-de-reposteria-para-cocinar/otros-productos-de-reposteria">
+                          Otros productos de repostería
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/productos-de-reposteria-para-cocinar/chocolate-para-reposteria">
+                          Chocolate para repostería
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/productos-de-reposteria-para-cocinar">
+                          Ver todo repostería
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/esencias">
+                      Esencias
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/salsas-para-postres">
+                      Salsas para postres
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/alinos-para-ensaladas">
+                      Aliños para ensaladas
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/salsas-para-untar">
+                      Salsas para untar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/delicatessen-y-otros">
+                      Delicatessen y otros
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/food-service" class="collapse">
+                      Food Service
+                    </a>
+                    <!-- <ul class="nav-dropdown">
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/caldos-food-service">
+                          Caldos Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/delicatessen-food-service">
+                          Delicatessen Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/alinos-para-ensaladas-food-service">
+                          Aliños para ensaladas Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/bases-y-salsas-deshidratadas-food-service">
+                          Bases y salsas deshidratadas Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/esencias-food-service">
+                          Esencias Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/hierbas-y-especias-food-service">
+                          Hierbas y especias Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/reposter%C3%ADa-food-service">
+                          Repostería Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/salsa-condimentadas-food-service">
+                          Salsas condimentadas Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service/salsas-para-postres-food-service">
+                          Salsas para postres Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service">
+                          Productos la primera Food Service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/food-service">
+                          Ver todo Food Service
+                        </a>
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li>
+                    <a href="" class="collapse">
+                      Regalos para la cocina
+                    </a>
+                    <!-- <ul class="nav-dropdown">
+                      <li>
+                        <a href="http://">
+                          Artículos y accesorios de cocina
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://">
+                          Accesorios para la mesa
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://">
+                          Delantales de cocina y bolsos
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://b2c.gourmet.cl/regalos-para-la-cocina">
+                          Ver todo regalos para la cocina
+                        </a>
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li>
+                    <a href="https://b2c.gourmet.cl/tienda?order=OrderByNameASC">
+                      Ver todos los productos Gourmet
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://b2b.gourmet.cl/" target="_blank" rel="noopener noreferrer">Compras por mayor</a>
+              </li>
+              <li>
+                <a href="https://www.gourmet.cl/recetas/">Recetas</a>
+              </li>
+              <li>
+                <a href="https://www.gourmet.cl/videos_tutoriales/">Videos</a>
+              </li>
+              <li>
+                <a href="https://www.gourmet.cl/menu-semanal/">Menu semanal</a>
+              </li>
+              <li>
+                <a href="https://www.gourmet.cl/blog/">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="search-group">
+            <input type="text" name="" id="" autocomplete="off" placeholder="Buscar" value>
+            <button type="button">
+              <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.00098 256.00098" height="48"
+                width="48">
+                <path
+                  d="M232.47656,215.51563l-40.67773-40.67774a96.10791,96.10791,0,1,0-16.97168,16.96973l40.67871,40.67871a12.0001,12.0001,0,1,0,16.9707-16.9707ZM43.99707,116a72,72,0,1,1,72,72A72.08124,72.08124,0,0,1,43.99707,116Z"
+                  fill="#ffffff"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="welcome">
+
+      <div class="container-banner">
+        <img class="banner" src="" alt="">
+      </div>
+
+      <div class="container-welcome-text">
+        <div class="welcome-top-text">
+          <div class="welcome-top-img">
+            <img src="" alt="">
+            <h1>Academia de repostería</h1>
+          </div>
+          <img src="" alt="">
+        </div>
+
+        <div class="welcome-main-text">
+          <p></p>
+        </div>
+      </div>
+
+      <div class="principal-video">
+        <button>ver vídeo</button>
+      </div>
+    </section>
+
+    <section class="courses">
+
+      <h2>Cursos de Repostería de Nuestra Academia</h2>
+      <img src="" alt="">
+
+      <div class="container-courses">
+        <ul>
+          <li>
+            <div class="card-course">
+              <img src="" alt="banner">
+              <p class="title"></p>
+              <p class="bajada"></p>
+              <button>Ver vídeos del curso</button>
+            </div>
+            <ul class="card-course-expand">
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+  <div class="banner-bottom">
+    <img src="" alt="">
+    <p></p>
+  </div>
+</body>
+
+</html>
