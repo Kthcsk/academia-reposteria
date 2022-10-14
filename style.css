@@ -466,6 +466,8 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
   text-decoration: none;
 }
 
+/* Aquí empiezan los estilos del landing */
+
 @media (min-width: 1024px) {
   .menu {
     display: none;
@@ -487,4 +489,6 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
   .header .top .top-principal .right-desk {
     display: flex;
   }
+
+  /* Aquí empiezan los estilos del landing */
 }
