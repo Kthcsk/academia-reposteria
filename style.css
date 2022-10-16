@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
+@font-face {
+  font-family: "NT";
+  src: url("./assets/fonts/NT-Wagner.otf");
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("./assets/fonts/Metropolis-Regular.otf");
+}
+
 body {
   margin: 0;
+  font-family: "Oswald", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -476,6 +487,122 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
 
 .academia-reposteria ul {
   list-style: none;
+}
+
+.tag-main {
+  position: relative;
+  background-color: #c3a4d9;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.tag-main h2 {
+  font-family: "NT", sans-serif;
+  text-align: center;
+  font-size: 1.7rem;
+  width: 85%;
+}
+
+.tag-main-logo {
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+  margin: 1rem 0 0.5rem;
+}
+
+.tag-main-chevron {
+  position: absolute;
+  top: 95%;
+  background-color: #c3a4d9;
+  height: 50px;
+  width: 80px;
+  border-radius: 0 0 150px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.container-courses {
+  padding: 4rem 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-courses ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container-courses .card-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-courses .card-course .card-course-img {
+  width: 100%;
+}
+
+.container-courses .card-course .card-course-title {
+  font-family: "NT";
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #70c8d4;
+  color: white;
+}
+
+.card-course-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container-courses .card-course .card-course-info .card-course-bajada {
+  font-family: "Metropolis";
+  font-weight: 300;
+  width: 100%;
+  padding: 1.5rem 0;
+  line-height: 20px;
+}
+
+.container-courses .card-course .card-course-info .card-course-button {
+  border: 0;
+  background-color: #f25198;
+  color: white;
+  font-family: "Metropolis";
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container-courses .card-course .card-course-info .card-course-button img {
+  width: 10px;
+  height: fit-content;
+}
+
+.container-courses .card-course-expand {
+  display: none;
 }
 
 @media (min-width: 1024px) {
