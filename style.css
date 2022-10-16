@@ -489,6 +489,104 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
   list-style: none;
 }
 
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome .container-banner {
+  width: 100%;
+}
+
+.welcome .container-banner .user-bar {
+  background-color: #70c8d4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.welcome .container-banner .user-bar button {
+  font-family: "Metropolis";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.welcome .container-banner .user-bar .go-login {
+  border: 0;
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.welcome .container-banner .user-bar .go-register {
+  border: 0;
+  background-color: #f25198;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+.container-welcome-top {
+  position: relative;
+  border-top: 3px solid white;
+  width: 90%;
+}
+
+.welcome-top-content {
+  position: relative;
+  background-color: #f25198;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.welcome-top-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-chevron {
+  position: absolute;
+  top: 95%;
+  background-color: #f25198;
+  height: 40px;
+  width: 70px;
+  border-radius: 0 0 150px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.welcome-chevron img {
+  width: 50%;
+}
+
+.welcome-main-text {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.welcome-main-text .block-text p,
+.welcome-main-text .block-text h1 {
+  display: inline;
+}
+
 .tag-main {
   position: relative;
   background-color: #c3a4d9;
@@ -541,6 +639,11 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.container-card-course {
+  width: 100%;
 }
 
 .container-courses .card-course {
@@ -548,10 +651,22 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .container-courses .card-course .card-course-img {
   width: 100%;
+  max-height: 242px;
+  object-fit: cover;
+}
+
+.card-course .card-course-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  padding-bottom: 2rem;
 }
 
 .container-courses .card-course .card-course-title {
@@ -560,9 +675,18 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
   font-size: 1.5rem;
   text-align: center;
   width: 100%;
-  padding: 1rem;
+  padding: 5px 1rem;
   background-color: #70c8d4;
   color: white;
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-courses .card-course .card-course-title h3 {
+  display: inline-block;
+  width: 100%;
 }
 
 .card-course-info {
@@ -605,6 +729,20 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
   display: none;
 }
 
+/* Expand card course */
+.card-course .card-course-expand {
+  background-color: #f4accb;
+  color: white;
+}
+
+.active.card-course .card-course-bottom {
+  background-color: #f4accb;
+  color: white;
+}
+
+.active.card-course .card-course-expand {
+}
+
 .banner-bottom {
   display: flex;
   flex-direction: column;
@@ -635,6 +773,37 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
   max-width: 170px;
 }
 
+@media (min-width: 768px) {
+  .container-courses ul {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    column-gap: 1rem;
+    width: 90%;
+  }
+
+  .container-card-course {
+    width: 48%;
+  }
+
+  .container-courses .card-course .card-course-title {
+    min-height: 14vh;
+  }
+
+  .container-courses .card-course .card-course-title span {
+    width: 100%;
+  }
+
+  .card-course-info {
+    width: 90%;
+  }
+
+  .container-courses .card-course .card-course-info .card-course-bajada {
+    min-height: 208px;
+  }
+}
+
 @media (min-width: 1024px) {
   .menu {
     display: none;
@@ -658,4 +827,24 @@ li#shopDesk #navshopdesk .nav-dropdown li a:hover {
   }
 
   /* Aquí empiezan los estilos del landing */
+
+  .container-courses .card-course .card-course-title {
+    min-height: 60px;
+  }
+
+  .container-courses .card-course .card-course-info .card-course-bajada {
+    min-height: 168px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-courses .card-course .card-course-info .card-course-bajada {
+    min-height: 148px;
+  }
+}
+
+@media (min-width: 1455px) {
+  .container-courses .card-course .card-course-info .card-course-bajada {
+    min-height: 128px;
+  }
 }
