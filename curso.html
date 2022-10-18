@@ -6,18 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./curso.css">
-  <script defer src="./main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script defer src="./curso.js"></script>
   <title>Academia Repostería | Gourmet</title>
 </head>
 
 <body>
   <main class="course-academia">
+    <div class="user-bar">
+      <button type="button" class="go-login">Entrar</button>
+      <button type="button" class="go-register">Crear cuenta</button>
+    </div>
+
     <section class="course-video">
       <div class="course-title">
         <h1>Galletas de mantequilla</h1>
       </div>
-      <div class="course-video">
-        <iframe src="" frameborder="0"></iframe>
+      <div class="principal-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CyFA3atk-NU" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <button class="play-video">
+          <img src="./assets/img/icon/boton-de-play.svg" alt="play">
+        </button>
       </div>
     </section>
     <section class="course-info">
@@ -30,7 +42,69 @@
 
     </section>
     <section class="courses-related">
-
+      <div class="tag-main">
+        <h2>Cursos Relacionados</h2>
+        <div class="tag-main-chevron">
+          <img src="./assets/img/icon/chevron-down-white.svg" alt="">
+        </div>
+      </div>
+      <div class="container-swiper">
+        <!-- Swiper -->
+        <div class="swiper mySwiperRelated">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="related-course-card">
+                <img class="related-course-card-img" src="./assets/img/banners/banner-relacionados.jpg" alt="">
+                <p class="related-course-card-title">Básicos de Repostería</p>
+                <a class="related-course-card-link" href="http://" target="_blank" rel="noopener noreferrer">Ver vídeos
+                  del curso</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="related-course-card">
+                <img class="related-course-card-img" src="./assets/img/banners/banner-relacionados.jpg" alt="">
+                <p class="related-course-card-title">¿Cómo hacer Galletas?</p>
+                <a class="related-course-card-link" href="http://" target="_blank" rel="noopener noreferrer">Ver vídeos
+                  del curso</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="related-course-card">
+                <img class="related-course-card-img" src="./assets/img/banners/banner-relacionados.jpg" alt="">
+                <p class="related-course-card-title">¿Cómo hacer Tortas?</p>
+                <a class="related-course-card-link" href="http://" target="_blank" rel="noopener noreferrer">Ver vídeos
+                  del curso</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="related-course-card">
+                <img class="related-course-card-img" src="./assets/img/banners/banner-relacionados.jpg" alt="">
+                <p class="related-course-card-title"> ¿Cómo hacer tartas,
+                  pie y kuchen?</p>
+                <a class="related-course-card-link" href="http://" target="_blank" rel="noopener noreferrer">Ver vídeos
+                  del curso</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="related-course-card">
+                <img class="related-course-card-img" src="./assets/img/banners/banner-relacionados.jpg" alt="">
+                <p class="related-course-card-title">¿Cómo hacer Galletas?</p>
+                <a class="related-course-card-link" href="http://" target="_blank" rel="noopener noreferrer">Ver vídeos
+                  del curso</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="related-course-card">
+                <img class="related-course-card-img" src="./assets/img/banners/banner-relacionados.jpg" alt="">
+                <p class="related-course-card-title">¿Cómo hacer Tortas?</p>
+                <a class="related-course-card-link" href="http://" target="_blank" rel="noopener noreferrer">Ver vídeos
+                  del curso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
   </main>
   <div class="banner-bottom">
@@ -39,6 +113,32 @@
       <img class="logo-gourmet" src="./assets/img/icon/Logo.svg" alt="Logo Gourmet">
     </div>
   </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiperRelated", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 6,
+          spaceBetween: 40,
+        }
+      },
+    });
+  </script>
 </body>
 
 </html>
