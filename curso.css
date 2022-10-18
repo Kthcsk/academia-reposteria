@@ -133,6 +133,45 @@ body {
   z-index: 1;
 }
 
+.course-comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.course-comments-title {
+  margin: auto;
+  width: 85%;
+  font-family: "NT";
+  color: #707070;
+  font-size: 1.8rem;
+}
+
+.card-comments {
+  margin: 0 auto;
+  width: 85%;
+  font-family: "Metropolis";
+  color: #707070;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #707070;
+}
+
+.card-comments-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card-comments-content-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .container-swiper {
   margin: 4rem 0;
   position: relative;
